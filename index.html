@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pet Movers - safe, trusted international pet relocation from India to 80+ destinations.">
+<title>Pet Movers | International Pet Relocation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+  --red:#e9161b; --red2:#ff3a3d; --ink:#101827; --muted:#5e6674;
+  --soft:#fff7f7; --line:#e8e8e8; --dark:#121416; --green:#22c55e;
+  --shadow:0 12px 35px rgba(16,24,39,.10); --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{background:#fff;position:sticky;top:0;z-index:1000;border-bottom:1px solid #eee}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo img{width:145px}
+.navlinks{display:flex;gap:25px;font-size:13px;font-weight:600;color:#303743}
+.navlinks a:hover{color:var(--red)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.phone{padding:11px 14px;border:1px solid #eee;border-radius:11px;font-size:12px;font-weight:700}
+.phone i{color:var(--red);margin-right:7px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:10px;padding:13px 20px;font-weight:800;cursor:pointer;transition:.25s}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 8px 20px rgba(233,22,27,.18)}
+.btn-red:hover{background:#c90f14;transform:translateY(-1px)}
+.btn-outline{background:#fff;color:var(--ink);border:1.5px solid var(--red)}
+.btn-wa{border:1.5px solid #d9d9d9;background:#fff}
+.btn-wa i{color:var(--green);font-size:20px}
+.menu{display:none;background:none;border:0;font-size:25px}
+
+.hero{background:linear-gradient(110deg,#fff 0%,#fff 49%,#f3f9fd 100%);overflow:hidden}
+.hero-grid{min-height:585px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:10px;padding:48px 0 30px}
+.badge{display:inline-flex;padding:7px 13px;border-radius:999px;background:#ffe7e8;color:var(--red);font-size:11px;font-weight:800;letter-spacing:.3px}
+.hero h1{font-family:Poppins,sans-serif;font-size:50px;line-height:1.04;margin:14px 0 15px;letter-spacing:-1.8px}
+.hero h1 span{color:var(--red)}
+.hero p{font-size:16px;color:#384252;max-width:555px}
+.hero-actions{display:flex;gap:12px;margin:22px 0}
+.trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px}
+.trust{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700}
+.trust i{font-size:20px;color:var(--red)}
+.hero-visual{position:relative;min-height:470px;display:flex;align-items:center;justify-content:center}
+.hero-visual:before{content:"";position:absolute;width:420px;height:420px;background:#ffe3e4;border-radius:50%;right:2%;top:5%;filter:blur(1px)}
+.hero-visual img{position:relative;width:100%;max-width:590px;z-index:2;border-radius:26px;object-fit:cover;box-shadow:0 20px 50px rgba(16,24,39,.13)}
+.hero-note{position:absolute;right:0;top:25px;z-index:3;font-family:cursive;font-size:19px;transform:rotate(-4deg)}
+.quote-card{position:absolute;z-index:5;right:18px;bottom:-15px;width:300px;background:#fff;padding:18px;border-radius:16px;box-shadow:var(--shadow);border:1px solid #eee}
+.quote-card h3{font-family:Poppins;font-size:17px;margin-bottom:8px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+input,select,textarea{width:100%;border:1px solid #ddd;border-radius:9px;padding:11px 12px;font:inherit;font-size:12px;outline:none;background:#fff}
+input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px #ffe9e9}
+.quote-card .btn{width:100%;margin-top:9px;font-size:12px}
+
+.stats{position:relative;margin-top:-5px;z-index:10}
+.stats-box{background:#fff;border-radius:16px;box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);padding:17px}
+.stat{display:flex;align-items:center;justify-content:center;gap:10px;border-right:1px solid #eee}
+.stat:last-child{border:0}
+.stat i{color:var(--red);font-size:25px}
+.stat strong{display:block;font-size:18px}.stat span{font-size:11px;color:var(--muted)}
+
+.section{padding:72px 0}
+.section-head{text-align:center;margin-bottom:30px}
+/* =========================================
+   TESTIMONIAL SECTION
+========================================= */
+
+.testimonial-section {
+    padding: 90px 20px;
+    background: #fff8f8;
+}
+
+.testimonial-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.testimonial-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.testimonial-heading span {
+    display: inline-block;
+    color: #e9161b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.testimonial-heading h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 38px;
+    line-height: 1.2;
+    color: #111827;
+    margin: 0 0 12px;
+}
+
+.testimonial-heading p {
+    color: #667085;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.testimonial-card {
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(20, 20, 20, 0.10);
+    border: 1px solid #eeeeee;
+}
+
+
+/* =========================================
+   IMAGE GALLERY
+========================================= */
+
+.testimonial-gallery {
+    padding: 22px;
+    background: #f5f5f5;
+}
+
+.main-review-image {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 17px;
+    background: #eeeeee;
+}
+
+.main-review-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #f1f1f1;
+    display: block;
+
+    opacity: 1;
+    transition:
+        opacity 0.55s ease,
+        transform 0.55s ease;
+}
+
+
+/* Fade animation */
+
+.main-review-image img.fade-out {
+    opacity: 0;
+    transform: scale(0.985);
+}
+
+
+/* =========================================
+   IMAGE ARROWS
+========================================= */
+
+.review-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 0;
+    background: rgba(255, 255, 255, 0.95);
+    color: #111827;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.25s ease;
+    z-index: 5;
+}
+
+.review-arrow:hover {
+    background: #e9161b;
+    color: #ffffff;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.review-prev {
+    left: 15px;
+}
+
+.review-next {
+    right: 15px;
+}
+
+
+/* =========================================
+   IMAGE COUNTER
+========================================= */
+
+.image-counter {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    z-index: 5;
+}
+
+
+/* =========================================
+   THUMBNAILS
+========================================= */
+
+.review-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.review-thumb {
+    padding: 3px;
+
+    height: 75px;
+
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.25s ease;
+}
+
+.review-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.review-thumb:hover {
+    border-color: #e9161b;
+}
+
+.review-thumb.active {
+    border-color: #e9161b;
+    box-shadow: 0 5px 15px rgba(233, 22, 27, 0.20);
+}
+
+
+/* =========================================
+   WRITTEN REVIEW
+========================================= */
+
+.testimonial-content {
+    padding: 55px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* =========================================
+   VERIFIED BADGE
+========================================= */
+
+.verified-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    width: fit-content;
+    background: #ecfdf3;
+    color: #16834a;
+    padding: 7px 12px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.verified-badge span {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #20b768;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+
+/* =========================================
+   STARS
+========================================= */
+
+.review-stars {
+    color: #f5a800;
+    font-size: 19px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   QUOTE ICON
+========================================= */
+
+.quote-icon {
+    color: #e9161b;
+    font-family: Georgia, serif;
+    font-size: 75px;
+    line-height: 0.7;
+    height: 55px;
+    opacity: 0.18;
+}
+
+
+/* =========================================
+   REVIEW TEXT
+========================================= */
+
+.testimonial-content blockquote {
+    font-family: Poppins, sans-serif;
+    font-size: 11px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #202938;
+    margin: 0 0 30px;
+}
+
+
+/* =========================================
+   AUTHOR
+========================================= */
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #ffe2e3;
+    color: #e9161b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.review-author h3 {
+    font-size: 14px;
+    margin: 0 0 3px;
+    color: #111827;
+}
+
+.review-author p {
+    font-size: 11px;
+    color: #737b88;
+    margin: 0;
+}
+
+
+/* =========================================
+   TRUST INFORMATION
+========================================= */
+
+.review-trust {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.review-trust div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.review-trust strong {
+    font-size: 12px;
+    color: #e9161b;
+}
+
+.review-trust span {
+    font-size: 10px;
+    color: #777f8c;
+}
+.kicker{font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.4px}
+.section h2{font-family:Poppins;font-size:30px;line-height:1.2;margin:7px 0}
+.section-sub{color:var(--muted);font-size:14px}
+.services{background:#fff}
+.service-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.service{border:1px solid #e7e7e7;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 5px 18px rgba(0,0,0,.04)}
+.service img{width:100%;height:108px;object-fit:cover}
+.service-body{padding:14px}
+.service h3{font-size:14px;line-height:1.25;margin-bottom:8px}
+.service p{font-size:13px;color:var(--muted)}
+
+.process{background:#fff8f8}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.step{text-align:center;position:relative}
+.step-icon{width:58px;height:58px;border:2px solid #ff7275;background:#fff;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;color:var(--red);font-size:21px}
+.step-num{position:absolute;left:calc(50% - 49px);top:-8px;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:11px;font-weight:800}
+.step h3{font-size:14px;margin-bottom:5px}.step p{font-size:13px;color:var(--muted);max-width:190px;margin:auto}
+
+.destinations{text-align:center}
+.country-row{display:flex;justify-content:center;flex-wrap:wrap;gap:24px;margin-top:25px}
+.country{font-size:16px;font-weight:600}.flag{font-size:31px;display:block;margin-bottom:4px}
+.flag img{
+  max-width: 75px;
+  height: 40px;
+  border-radius: 15px;
+  display: inline;
+}
+
+.reviews{background:linear-gradient(180deg,#fff 0,#fff7f7 100%)}
+.review-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:25px;align-items:stretch}
+.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.review-slider{position:relative;padding:0 42px}
+.review-track{overflow:hidden;border-radius:16px}
+.review-slide{min-width:100%;background:#fff;border-radius:16px;padding:20px;box-shadow:0 8px 25px rgba(0,0,0,.05);display:none}
+.review-slide img{
+  max-width: 70px;
+}
+.review-slide.active{display:block;animation:reviewFade .35s ease}
+@keyframes reviewFade{from{opacity:.35;transform:translateX(8px)}to{opacity:1;transform:translateX(0)}}
+.review-arrow{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;border:1px solid #ddd;background:#fff;color:var(--red);cursor:pointer;z-index:3;box-shadow:0 5px 15px rgba(0,0,0,.08)}
+.review-arrow:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.review-arrow.prev{left:0}.review-arrow.next{right:0}
+.review-dots{display:flex;justify-content:center;gap:7px;margin-top:16px}
+.review-dot{width:8px;height:8px;border-radius:50%;border:0;background:#d2d2d2;padding:0;cursor:pointer}
+.review-dot.active{background:var(--red);width:22px;border-radius:8px}
+
+.review{background:#fff;border-radius:16px;padding:16px;box-shadow:0 8px 25px rgba(0,0,0,.05)}
+.review-top{display:flex;gap:12px;align-items:center}.review img{width:62px;height:82px;object-fit:cover;border-radius:9px}
+.quote{color:var(--red);font-size:27px;font-weight:900;line-height:1}
+.review p{font-size:12px;color:#48505d;margin:10px 0}
+.stars{color:#f5a800;letter-spacing:2px;font-size:13px}
+.review small{font-size:10px;color:#777}
+.big-form{background:var(--red);color:#fff;border-radius:18px;padding:25px;position:relative;overflow:hidden}
+.big-form h2{font-size:26px;color:#fff}.big-form p{font-size:12px;opacity:.9;margin-bottom:16px}
+.big-form input,.big-form select,.big-form textarea{background:#fff;border:0}
+.big-form .btn{background:#111827;color:#fff;width:100%;margin-top:10px}
+.form-foot{font-size:10px;display:flex;gap:12px;margin-top:13px;opacity:.9;flex-wrap:wrap}
+
+.faq{background:#fff}
+.faq-list{max-width:850px;margin:auto;display:grid;gap:10px}
+.faq-item{border:1px solid #e8e8e8;border-radius:12px;overflow:hidden}
+.faq-q{width:100%;padding:18px 20px;background:#fff;border:0;display:flex;justify-content:space-between;align-items:center;text-align:left;font:700 14px Inter;cursor:pointer}
+.faq-q i{color:var(--red);transition:.25s}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 20px;color:var(--muted);font-size:13px}
+.faq-item.active .faq-a{max-height:180px;padding:0 20px 18px}
+.faq-item.active .faq-q i{transform:rotate(45deg)}
+
+.footer{background:#121416;color:#fff;position:relative;padding:45px 0 20px;overflow:hidden}
+.footer:before{content:"";position:absolute;top:-18px;left:-3%;width:106%;height:40px;background:var(--red);border-radius:50% 50% 0 0/100% 100% 0 0}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:30px;margin-top:15px}
+.footer img{width:150px;}
+.footer p,.footer li{font-size:12px;color:#c9cbd0}.footer ul{list-style:none;display:grid;gap:7px;margin-top:12px}
+.footer h4{margin-bottom:10px}.social{display:flex;gap:9px;margin-top:15px}.social a{width:32px;height:32px;border:1px solid #333;border-radius:50%;display:grid;place-items:center}
+.copy{border-top:1px solid #292b2e;margin-top:30px;padding-top:15px;text-align:center;font-size:10px;color:#aaa}
+
+.mobile-bar{display:none}
+@media(max-width:1000px){
+ .navlinks{display:none}.menu{display:block}.phone{display:none}
+ .hero-grid{grid-template-columns:1fr;padding-top:35px}.hero h1{font-size:43px}
+ .hero-visual{min-height:500px}.quote-card{right:4%;bottom:0}
+  .testimonial-card {
+        grid-template-columns: 1fr;
+    }
+
+    .main-review-image {
+        height: 550px;
+    }
+
+    .testimonial-content {
+        padding: 40px;
+    }
+
+    .testimonial-content blockquote {
+        font-size: 11px;
+    }
+ .service-grid{grid-template-columns:repeat(3,1fr)}
+ .review-layout{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+ .nav{height:62px}.logo img{width:125px}
+ .nav-actions .btn{display:none}
+ .hero-grid{padding:28px 0 15px}.hero h1{font-size:35px;letter-spacing:-1px}
+ .hero p{font-size:14px}.hero-actions{flex-direction:column}.hero-actions .btn{width:100%}
+ .trust-row{grid-template-columns:1fr 1fr}.hero-visual{min-height:540px;align-items:flex-start;padding-top:10px}
+ .hero-visual img{margin-top:5px;border-radius:18px}.hero-note{top:0;font-size:14px}
+ .quote-card{width:92%;right:4%;bottom:0}
+ .stats-box{grid-template-columns:1fr 1fr;gap:12px}.stat{border:0;justify-content:flex-start}
+ .stat strong{font-size:15px}.section{padding:52px 0}.section h2{font-size:25px}
+ .service-grid{grid-template-columns:1fr 1fr}.service img{height:150px}
+ .process-grid{grid-template-columns:1fr 1fr;row-gap:28px}
+ .country-row{gap:17px}
+ /* =========================================
+   TABLET
+========================================= */
+
+
+    .testimonial-section {
+        padding: 55px 15px;
+    }
+
+    .testimonial-heading {
+        margin-bottom: 28px;
+    }
+
+    .testimonial-heading h2 {
+        font-size: 27px;
+    }
+
+    .testimonial-heading p {
+        font-size: 13px;
+    }
+
+    .testimonial-card {
+        border-radius: 18px;
+    }
+
+    .testimonial-gallery {
+        padding: 12px;
+    }
+
+    .main-review-image {
+        height: 420px;
+        border-radius: 13px;
+    }
+
+    .review-arrow {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .review-prev {
+        left: 10px;
+    }
+
+    .review-next {
+        right: 10px;
+    }
+
+    .review-thumbnails {
+        gap: 6px;
+        margin-top: 9px;
+    }
+
+    .review-thumb {
+        height: 58px;
+        border-radius: 7px;
+    }
+
+    .testimonial-content {
+        padding: 30px 22px;
+    }
+
+    .review-stars {
+        font-size: 16px;
+    }
+
+    .testimonial-content blockquote {
+        font-size: 11px;
+        line-height: 1.65;
+    }
+
+    .quote-icon {
+        font-size: 60px;
+        height: 45px;
+    }
+
+    .review-trust {
+        gap: 20px;
+    }
+
+ .review-grid{grid-template-columns:1fr}.review-slider{padding:0 30px}.review-arrow{width:34px;height:34px}
+ .footer-grid{grid-template-columns:1fr 1fr;gap:22px}
+ .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:999;background:#fff;border-top:1px solid #ddd;padding:8px;gap:8px;box-shadow:0 -8px 20px rgba(0,0,0,.08)}
+ .mobile-bar a{flex:1}.mobile-bar .btn{width:100%;padding:11px 8px;font-size:11px}
+}
+@media(max-width:430px){
+ .hero h1{font-size:31px}.form-row{grid-template-columns:1fr}
+ .main-review-image {
+        height: 360px;
+    }
+
+    .review-thumb {
+        height: 48px;
+    }
+
+    .testimonial-content {
+        padding: 25px 18px;
+    }
+
+    .testimonial-content blockquote {
+        font-size: 11px;
+    }
+ .service-grid{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr}
+ .footer-grid{grid-template-columns:1fr}
+ .stats-box{padding:12px}
+}
+
+
+/* Form submission feedback */
+.pet-lead-form .form-status{margin-top:9px;font-size:11px;line-height:1.4;min-height:16px}
+.quote-card .form-status.error{color:#d10f14;font-weight:700}
+.big-form .form-status.error{color:#fff;font-weight:700}
+.pet-lead-form .form-status.sending{opacity:.9}
+.pet-lead-form .field-error{border-color:#ff5a5a!important;box-shadow:0 0 0 3px rgba(255,90,90,.12)!important}
+.pet-lead-form button:disabled{opacity:.75;cursor:not-allowed;transform:none}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+ <div class="container nav">
+  <a class="logo" href="#home"><img src="assets/logo.png" alt="Pet Movers"></a>
+  <div class="nav-actions">
+   <a class="phone" href="tel:+919667921734"><i class="fa-solid fa-phone"></i>+91 96679 21734</a>
+   <a class="btn btn-red" href="#quote">Get Free Quote <i class="fa-solid fa-arrow-right"></i></a>
+   <button class="menu" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div>
+   <span class="badge">INTERNATIONAL PET RELOCATION</span>
+   <h1>Your Pet’s <span>Global Journey</span>,<br>Our Responsibility</h1>
+   <p>From India to anywhere in the world — we handle documentation, permits, health checks and safe travel for your beloved pets.</p>
+   <div class="hero-actions">
+    <a class="btn btn-red" href="#quote">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a>
+    <a class="btn btn-wa" href="https://wa.me/919667921734" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+   </div>
+   <div class="trust-row">
+    <div class="trust"><i class="fa-solid fa-plane-circle-check"></i><span>IATA-Certified<br>Process</span></div>
+    <div class="trust"><i class="fa-solid fa-shield-heart"></i><span>Safe & Secure<br>Travel</span></div>
+    <div class="trust"><i class="fa-solid fa-headset"></i><span>24/7<br>Support</span></div>
+    <div class="trust"><i class="fa-solid fa-truck-fast"></i><span>Door-to-Door<br>Service</span></div>
+   </div>
+  </div>
+  <div class="hero-visual">
+   <div class="hero-note">New Destinations<br>Same Love ♡</div>
+   <img src="assets/hero-pets.webp" alt="Dog and cat ready for international pet travel">
+   <form class="quote-card pet-lead-form" id="heroQuoteForm" novalidate>
+    <h3>Plan Your Pet's Journey</h3>
+    <div class="form-row">
+      <input name="name" type="text" placeholder="Your Name*" autocomplete="name" required>
+      <input name="whatsapp" type="tel" placeholder="WhatsApp Number*" autocomplete="tel" required>
+    </div>
+    <div class="form-row" style="margin-top:8px">
+      <input name="fromCountry" type="text" placeholder="From Country*" required>
+      <input name="toCountry" type="text" placeholder="To Country*" required>
+    </div>
+    <select name="petType" style="margin-top:8px" required>
+      <option value="">Pet Type*</option><option>Dog</option><option>Cat</option><option>Other</option>
+    </select>
+    <button class="btn btn-red" type="submit">Get Free Quote <i class="fa-solid fa-arrow-right"></i></button>
+    <div class="form-status" aria-live="polite"></div>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="stats">
+ <div class="container stats-box">
+  <div class="stat"><i class="fa-solid fa-paw"></i><div><strong>5,600+</strong><span>Successful Relocations</span></div></div>
+  <div class="stat"><i class="fa-solid fa-users"></i><div><strong>6,580+</strong><span>Happy Pet Parents</span></div></div>
+  <div class="stat"><i class="fa-solid fa-location-dot"></i><div><strong>100,000+</strong><span>KMs Covered</span></div></div>
+  <div class="stat"><i class="fa-solid fa-globe"></i><div><strong>80+</strong><span>Global Destinations</span></div></div>
+ </div>
+</section>
+
+<section class="section services" id="services">
+ <div class="container">
+  <div class="section-head"><div class="kicker">OUR SERVICES</div><h2>Complete Pet Relocation Support</h2><p class="section-sub">Everything your pet needs for a safe, comfortable and hassle-free journey.</p></div>
+  <div class="service-grid">
+   <article class="service"><img src="assets/Air Cargo.webp" alt=""><div class="service-body"><h3>Air Cargo<br>& Excess Baggage</h3><p>Domestic & international travel with top airlines.</p></div></article>
+   <article class="service"><img src="assets/Documentation.webp" alt=""><div class="service-body"><h3>Documentation<br>& Permits</h3><p>Complete paperwork, customs clearance and import/export permits.</p></div></article>
+   <article class="service"><img src="assets/vet-Health-Checks.webp" alt=""><div class="service-body"><h3>Vet Health Checks<br>& Vaccinations</h3><p>Guidance on required tests, vaccinations and health certificates.</p></div></article>
+   <article class="service"><img src="assets/IATA-Approved.webp" alt=""><div class="service-body"><h3>IATA-Approved<br>Travel Crates</h3><p>Safe, comfortable and airline-compliant crates for your pet.</p></div></article>
+   <article class="service"><img src="assets/loading-pet-van.webp" alt=""><div class="service-body"><h3>Door-to-Door<br>Pickup & Delivery</h3><p>Hassle-free pickup from your location and safe delivery abroad.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="section process" id="process">
+ <div class="container">
+  <div class="section-head"><div class="kicker">HOW IT WORKS</div><h2>A Simple & Transparent Process</h2></div>
+  <div class="process-grid">
+   <div class="step"><span class="step-num">01</span><div class="step-icon"><i class="fa-regular fa-comments"></i></div><h3>Consultation & Free Quote</h3><p>Tell us your travel plans and pet details.</p></div>
+   <div class="step"><span class="step-num">02</span><div class="step-icon"><i class="fa-regular fa-file-lines"></i></div><h3>Documentation & Health Checks</h3><p>We guide you through all required paperwork and veterinary requirements.</p></div>
+   <div class="step"><span class="step-num">03</span><div class="step-icon"><i class="fa-solid fa-plane"></i></div><h3>Booking & Travel Preparation</h3><p>We arrange flight booking and provide IATA-approved travel crates.</p></div>
+   <div class="step"><span class="step-num">04</span><div class="step-icon"><i class="fa-solid fa-house"></i></div><h3>Safe Travel & Delivery</h3><p>We manage customs, quarantine (if required) and safe delivery to your destination.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section destinations" id="destinations">
+ <div class="container">
+  <div class="section-head"><div class="kicker">POPULAR DESTINATIONS</div><h2>Relocating Pets to 80+ Countries</h2><p class="section-sub">We move pets from India to all major destinations worldwide.</p></div>
+  <div class="country-row">
+   <div class="country"><span class="flag"><img src="assets/usa.webp" alt=""></span>USA</div><div class="country"><span class="flag"><img src="assets/Uk.webp" alt=""></span>UK</div><div class="country"><span class="flag"><img src="assets/Canada.webp" alt=""></span>Canada</div><div class="country"><span class="flag"><img src="assets/Australia.webp" alt=""></span>Australia</div><div class="country"><span class="flag"><img src="assets/UAE.webp" alt=""></span>UAE</div><div class="country"><span class="flag"><img src="assets/Singapore.webp" alt=""></span>Singapore</div><div class="country"><span class="flag"><img src="assets/Germany.webp" alt=""></span>Germany</div><div class="country"><span class="flag"><img src="assets/France.webp" alt=""></span>France</div><div class="country"><span class="flag"><img src="assets/Netherlands.webp" alt=""></span>Netherlands</div><div class="country"><span class="flag"><img src="assets/New-Zealand.webp" alt=""></span>New Zealand</div><div class="country"><span class="flag"><img src="assets/Japan.webp" alt=""></span>Japan</div><div class="country"><span class="flag"><img src="assets/india.webp" alt=""></span>India</div>
+  </div>
+ </div>
+</section>
+<!-- large testimonial section -->
+ <section class="testimonial-section" id="testimonials">
+    <div class="testimonial-container">
+        <!-- Section Heading -->
+        <div class="testimonial-heading">
+            <span>TESTIMONIAL</span>
+            <h2>Real Stories From Happy Pet Parents</h2>
+            <p>
+                Trusted by pet parents for safe, smooth and stress-free
+                international pet relocation.
+            </p>
+        </div>
+        <div class="testimonial-card">
+            <!-- LEFT: IMAGE GALLERY -->
+            <div class="testimonial-gallery">
+                <div class="main-review-image">
+                    <img
+                        id="reviewMainImage"
+                        src="assets/client-img1.webp"
+                        alt="Pet Movers customer review"
+                    >
+                    <button class="review-arrow review-prev" id="reviewPrev">
+                        &#10094;
+                    </button>
+                    <button class="review-arrow review-next" id="reviewNext">
+                        &#10095;
+                    </button>
+                    <div class="image-counter">
+                        <span id="currentImage">1</span> / 5
+                    </div>
+                </div>
+                <!-- Thumbnails -->
+                <div class="review-thumbnails">
+                    <button class="review-thumb active" data-index="0">
+                        <img src="assets/client-img1.webp" alt="Review image 1">
+                    </button>
+                    <button class="review-thumb" data-index="1">
+                        <img src="assets/client-img2.webp" alt=" Review image 2">
+                    </button>
+                    <button class="review-thumb" data-index="2">
+                        <img src="assets/client-img3.webp" alt="Review image 3">
+                    </button>
+                    <button class="review-thumb" data-index="3">
+                        <img src="assets/client-img4.webp" alt="Review image 4">
+                    </button>
+                    <button class="review-thumb" data-index="4">
+                        <img src="assets/client-img5.webp" alt="Review image 5">
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: WRITTEN REVIEW -->
+            <div class="testimonial-content">
+
+                <div class="verified-badge">
+                    <span>✓</span> Verified Pet Parent
+                </div>
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <div class="quote-icon">
+                    “
+                </div>
+
+                <blockquote>
+                    Phew !!! Finally reached India with our Pet, from USA. We personally are very grateful and appreciative of Mr. Bijoy in making this relocation of our pet internationally.
+I had on my own initiated the paper work with the USDA & AQCS authorities and had uploaded the reqired documents to process the paperwork but had no success for reasons beyond my understanding.
+Then we were recommended Pet Movers Pvt. and we contacted Mr.Bijoy. He without any retainership and hesitation shared with us the copies of appropriate documents that were needed and built confidence that we were in good hands.
+Mr. Bijoy, irrespective of 10 hrs. time difference was always available thru wassapp at odd hours. He was mainly responsible in suggesting the pet friendly airlines, in helping us getting the USDA endorsed certificate in the required time frame and finally the main hurdle the NOC from AQCS in the shortest time frame that we had.
+Why am I giving such a long review.. because I had my first trip with different airline of my choice cancelled, the my new flight got cancelled at last moment due to snow storm and then finally on my re-booked date had only one day left to get the NOC. He with confidence promised.and got the NOC from AQCS to import the pet.
+Once again, a big thank you from me and wife in helping us get our beloved pet relocated to India.
+Sharing some happy 😊 moments that became possible because of Mr Bijoy -Pet Movers Pvt. Ltd.
+                </blockquote>
+
+                <div class="review-author">
+                    <div class="author-avatar">
+                        N
+                    </div>
+
+                    <div>
+                        <h3>Naresh uppal</h3>
+                        <p>Moved from USA to INDIA with our pet </p>
+                    </div>
+                </div>
+
+                <div class="review-trust">
+                    <div>
+                        <strong>★★★★★</strong>
+                        <span>Customer Experience</span>
+                    </div>
+
+                    <div>
+                        <strong>Safe & Secure</strong>
+                        <span>Pet Relocation</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="section reviews" id="testimonials">
+ <div class="container review-layout">
+  <div>
+   <div class="section-head" style="text-align:left;margin-bottom:20px"><div class="kicker">TESTIMONIALS</div><h2>Happy Pet Parents</h2><p class="section-sub">Thousands of pet parents trust us for safe and smooth relocations.</p></div>
+   <div class="review-slider">
+    <button class="review-arrow prev" aria-label="Previous review"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="review-track">
+      <article class="review-slide">
+        <div class="review-top"><img src="assets/review-img1.webp" alt="Bruno"><div><span class="quote">“</span><small>Priya Sharma<br>Moved to Canada with Bruno</small></div></div>
+        <p>Pet Movers made our move from India to Canada so smooth. Regular updates and professional support throughout the journey!</p><div class="stars">★★★★★</div>
+      </article>
+      <article class="review-slide">
+        <div class="review-top"><img src="assets/review-img2.webp" alt="Luna"><div><span class="quote">“</span><small>Rohit Mehta<br>Moved to UK with Luna</small></div></div>
+        <p>Very professional team! Handled all documentation and kept us updated. Our cat traveled safely throughout the journey.</p><div class="stars">★★★★★</div>
+      </article>
+      <article class="review-slide">
+        <div class="review-top"><img src="assets/review-img3.webp" alt="Max"><div><span class="quote">“</span><small>Ananya Kapoor<br>Moved to Australia with Max</small></div></div>
+        <p>The team explained every step clearly and coordinated the paperwork, crate and airport process perfectly. Highly recommended!</p><div class="stars">★★★★★</div>
+      </article>
+      <article class="review-slide">
+        <div class="review-top"><img src="assets/review-img4.webp" alt="Milo"><div><span class="quote">“</span><small>Arjun Malhotra<br>Moved to UAE with Milo</small></div></div>
+        <p>Excellent support from start to finish. We were nervous about relocating our cat, but the whole process was handled professionally.</p><div class="stars">★★★★★</div>
+      </article>
+      <article class="review-slide">
+        <div class="review-top"><img src="assets/review-img5.webp" alt="Coco"><div><span class="quote">“</span><small>Neha Verma<br>Moved to USA with Coco</small></div></div>
+        <p>Fast responses, clear guidance and regular updates. Coco reached us safely and the door-to-door service made everything easier.</p><div class="stars">★★★★★</div>
+      </article>
+      <article class="review-slide">
+        <div class="review-top"><img src="assets/review-img2.webp" alt="Simba"><div><span class="quote">“</span><small>Rahul Mehta<br>Moved to Germany with Simba</small></div></div>
+        <p>Great experience with the Pet Movers team. They handled the complicated documentation and travel requirements without any hassle.</p><div class="stars">★★★★★</div>
+      </article>
+    </div>
+    <button class="review-arrow next" aria-label="Next review"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="review-dots"></div>
+   </div>
+  </div>
+  <form class="big-form pet-lead-form" id="mainQuoteForm" novalidate>
+   <div class="kicker" style="color:#fff">FREE CONSULTATION</div><h2>Get a Free Relocation Plan</h2><p>Tell us your details and we'll get back to you with the best options.</p>
+   <div class="form-row"><input name="name" type="text" placeholder="Your Name*" autocomplete="name" required><input name="whatsapp" type="tel" placeholder="WhatsApp Number*" autocomplete="tel" required></div>
+   <div class="form-row" style="margin-top:8px">
+      <input name="fromCountry" type="text" placeholder="From Country*" required>
+      <input name="toCountry" type="text" placeholder="To Country*" required>
+    </div>
+   <div class="form-row" style="margin-top:9px">
+    <select name="petType" required><option value="">Pet Type*</option><option>Dog</option><option>Cat</option><option>Other</option></select>
+    <input name="travelDate" type="date" aria-label="Preferred Travel Date">
+   </div>
+   <textarea name="details" rows="3" placeholder="Additional Details (Optional)" style="margin-top:9px"></textarea>
+   <button class="btn" type="submit">Get My Free Quote <i class="fa-solid fa-arrow-right"></i></button>
+   <div class="form-foot"><span>● Free consultation</span><span>× No spam</span><span>◷ Quick response</span></div>
+   <div class="form-status" aria-live="polite"></div>
+  </form>
+ </div>
+</section>
+
+<section class="section faq" id="faq">
+ <div class="container">
+  <div class="section-head"><div class="kicker">FAQ</div><h2>Frequently Asked Questions</h2><p class="section-sub">Everything you need to know before your pet's international journey.</p></div>
+  <div class="faq-list">
+   <div class="faq-item active"><button class="faq-q">How early should I plan an international pet relocation?<i class="fa-solid fa-plus"></i></button><div class="faq-a">Ideally, start 6–12 weeks before travel. Some countries have longer import-permit, vaccination, microchip or quarantine timelines, so earlier planning is safer.</div></div>
+   <div class="faq-item"><button class="faq-q">Do you handle pet travel documentation and permits?<i class="fa-solid fa-plus"></i></button><div class="faq-a">Yes. We coordinate the documentation process, health certificates, permits and other country-specific requirements based on your destination.</div></div>
+   <div class="faq-item"><button class="faq-q">Can you arrange door-to-door pet relocation?<i class="fa-solid fa-plus"></i></button><div class="faq-a">Yes. Door-to-door service can include pickup, travel preparation, airport coordination and delivery at the destination, subject to route and country requirements.</div></div>
+   <div class="faq-item"><button class="faq-q">What types of pets can you relocate?<i class="fa-solid fa-plus"></i></button><div class="faq-a">Dogs and cats are commonly relocated. Other pets may be possible depending on airline, destination-country and veterinary regulations.</div></div>
+   <div class="faq-item"><button class="faq-q">How much does international pet relocation cost?<i class="fa-solid fa-plus"></i></button><div class="faq-a">Pricing depends on destination, pet size, airline route, crate requirements, documentation, veterinary work and pickup/delivery needs. Request a free quote for an accurate estimate.</div></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="footer">
+ <div class="container footer-grid">
+  <div><img src="assets/logo.png" alt="Pet Movers"><p style="margin-top:12px">Safe Journeys. Happier Pets.</p><div class="social"><a href="https://www.instagram.com/petmovers.in/"><i class="fa-brands fa-instagram"></i></a><a href="https://www.youtube.com/@petmoverss"><i class="fa-brands fa-youtube"></i></a></div></div>
+  <div><h4>Contact</h4><ul><li>+91 96679 21734</li><li>info@petmovers.in</li><li>New Delhi, India</li></ul></div>
+  <div><h4>Get Started</h4><p>Ready to plan a safe international journey for your pet?</p><a class="btn btn-red" style="margin-top:14px" href="#quote">Get Free Quote</a></div>
+ </div>
+ <div class="container copy">© 2026 Pet Movers. All rights reserved.</div>
+</footer>
+
+<div class="mobile-bar"><a href="tel:+919667921734" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call Now</a><a href="https://wa.me/919667921734" class="btn btn-red" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
+
+<script>
+
+const reviewSlides = document.querySelectorAll('.review-slide');
+const reviewDots = document.querySelector('.review-dots');
+const prevReview = document.querySelector('.review-arrow.prev');
+const nextReview = document.querySelector('.review-arrow.next');
+let reviewIndex = 0;
+
+reviewSlides.forEach((_, i) => {
+  const dot = document.createElement('button');
+  dot.className = 'review-dot' + (i === 0 ? ' active' : '');
+  dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+  dot.addEventListener('click', () => showReview(i));
+  reviewDots.appendChild(dot);
+});
+
+function showReview(index){
+  reviewIndex = (index + reviewSlides.length) % reviewSlides.length;
+  reviewSlides.forEach((slide, i) => slide.classList.toggle('active', i === reviewIndex));
+  document.querySelectorAll('.review-dot').forEach((dot, i) => dot.classList.toggle('active', i === reviewIndex));
+}
+prevReview.addEventListener('click', () => showReview(reviewIndex - 1));
+nextReview.addEventListener('click', () => showReview(reviewIndex + 1));
+showReview(0);
+
+let reviewTimer = setInterval(() => showReview(reviewIndex + 1), 5000);
+document.querySelector('.review-slider').addEventListener('mouseenter', () => clearInterval(reviewTimer));
+document.querySelector('.review-slider').addEventListener('mouseleave', () => {
+  reviewTimer = setInterval(() => showReview(reviewIndex + 1), 5000);
+});
+
+document.querySelectorAll('.faq-q').forEach(btn=>{
+ btn.addEventListener('click',()=>{
+   const item=btn.parentElement;
+   document.querySelectorAll('.faq-item').forEach(x=>{if(x!==item)x.classList.remove('active')});
+   item.classList.toggle('active');
+ });
+});
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyKx_5hBGy3gbXFlFQykwqiwfvHUhY2cBdevD-bWgDNkq9vHalfQYBtZ1hWt0MufhXb/exec";
+const THANK_YOU_URL = "thankyou.html";
+
+function setFormStatus(form, message, type) {
+  const status = form.querySelector(".form-status");
+  if (!status) return;
+  status.textContent = message;
+  status.className = "form-status " + (type || "");
+}
+
+function markInvalidFields(form) {
+  let valid = true;
+  form.querySelectorAll("[required]").forEach(field => {
+    const empty = !field.value.trim();
+    field.classList.toggle("field-error", empty);
+    if (empty) valid = false;
+    field.addEventListener("input", () => field.classList.remove("field-error"), { once: true });
+    field.addEventListener("change", () => field.classList.remove("field-error"), { once: true });
+  });
+  return valid;
+}
+
+document.querySelectorAll(".pet-lead-form").forEach(form => {
+  form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    if (!markInvalidFields(form)) {
+      setFormStatus(form, "Please fill in all required fields.", "error");
+      return;
+    }
+
+    if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.includes("PASTE_YOUR_")) {
+      setFormStatus(form, "Please connect the Google Apps Script URL first.", "error");
+      return;
+    }
+
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalButtonHTML = submitButton.innerHTML;
+    submitButton.disabled = true;
+    submitButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+    setFormStatus(form, "Submitting your request...", "sending");
+
+    const formData = new URLSearchParams();
+    new FormData(form).forEach((value, key) => formData.append(key, value));
+
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"},
+        body: formData.toString()
+      });
+
+      window.location.href = THANK_YOU_URL;
+    } catch (error) {
+      console.error("Form submission error:", error);
+      submitButton.disabled = false;
+      submitButton.innerHTML = originalButtonHTML;
+      setFormStatus(form, "Unable to submit right now. Please try again or call us.", "error");
+    }
+  });
+});
+document.querySelector('.menu').addEventListener('click',()=>{
+ const nav=document.querySelector('.navlinks');
+ nav.style.display=nav.style.display==='flex'?'none':'flex';
+ nav.style.position='absolute';nav.style.top='62px';nav.style.left='0';nav.style.right='0';
+ nav.style.background='#fff';nav.style.padding='16px 4%';nav.style.flexDirection='column';nav.style.boxShadow='0 12px 25px rgba(0,0,0,.08)';
+});
+// large testimonail section
+/* =========================================
+   PET MOVERS REVIEW GALLERY
+========================================= */
+
+const reviewImages = [
+    "assets/client-img1.webp",
+    "assets/client-img2.webp",
+    "assets/client-img3.webp",
+    "assets/client-img4.webp",
+    "assets/client-img5.webp"
+];
+
+const mainReviewImage = document.getElementById("reviewMainImage");
+const reviewThumbs = document.querySelectorAll(".review-thumb");
+
+const prevButton = document.getElementById("reviewPrev");
+const nextButton = document.getElementById("reviewNext");
+
+const currentImage = document.getElementById("currentImage");
+
+let currentReviewIndex = 0;
+let autoPlay;
+
+
+/* =========================================
+   CHANGE IMAGE
+========================================= */
+
+function changeReviewImage(index) {
+
+    if (index < 0) {
+        index = reviewImages.length - 1;
+    }
+
+    if (index >= reviewImages.length) {
+        index = 0;
+    }
+
+    currentReviewIndex = index;
+
+    // Start fade
+    mainReviewImage.classList.add("fade-out");
+
+    setTimeout(() => {
+
+        mainReviewImage.src = reviewImages[currentReviewIndex];
+
+        currentImage.textContent = currentReviewIndex + 1;
+
+        // Remove fade
+        mainReviewImage.classList.remove("fade-out");
+
+    }, 300);
+
+
+    // Update thumbnails
+
+    reviewThumbs.forEach((thumb, i) => {
+
+        thumb.classList.toggle(
+            "active",
+            i === currentReviewIndex
+        );
+
+    });
+}
+
+
+/* =========================================
+   NEXT
+========================================= */
+
+nextButton.addEventListener("click", () => {
+
+    changeReviewImage(currentReviewIndex + 1);
+
+    resetAutoPlay();
+
+});
+
+
+/* =========================================
+   PREVIOUS
+========================================= */
+
+prevButton.addEventListener("click", () => {
+
+    changeReviewImage(currentReviewIndex - 1);
+
+    resetAutoPlay();
+
+});
+
+
+/* =========================================
+   THUMBNAILS
+========================================= */
+
+reviewThumbs.forEach((thumb) => {
+
+    thumb.addEventListener("click", () => {
+
+        const index = Number(
+            thumb.getAttribute("data-index")
+        );
+
+        changeReviewImage(index);
+
+        resetAutoPlay();
+
+    });
+
+});
+
+
+/* =========================================
+   AUTOPLAY
+========================================= */
+
+function startAutoPlay() {
+
+    autoPlay = setInterval(() => {
+
+        changeReviewImage(
+            currentReviewIndex + 1
+        );
+
+    }, 4000);
+
+}
+
+
+function resetAutoPlay() {
+
+    clearInterval(autoPlay);
+
+    startAutoPlay();
+
+}
+
+
+/* =========================================
+   PAUSE ON HOVER
+========================================= */
+
+const gallery = document.querySelector(
+    ".testimonial-gallery"
+);
+
+gallery.addEventListener("mouseenter", () => {
+
+    clearInterval(autoPlay);
+
+});
+
+gallery.addEventListener("mouseleave", () => {
+
+    startAutoPlay();
+
+});
+
+
+/* =========================================
+   INITIALIZE
+========================================= */
+
+changeReviewImage(0);
+
+startAutoPlay();
+</script>
+</body>
+</html>
