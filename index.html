@@ -740,6 +740,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0
  .footer-grid{grid-template-columns:1fr 1fr;gap:22px}
  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:999;background:#fff;border-top:1px solid #ddd;padding:8px;gap:8px;box-shadow:0 -8px 20px rgba(0,0,0,.08)}
  .mobile-bar a{flex:1}.mobile-bar .btn{width:100%;padding:11px 8px;font-size:11px}
+.btn-green{ background-color:#25D366; color:#fff; border:1.5px solid #25D366; box-shadow:0 4px 14px rgba(37,211,102,.04); }
 }
 @media(max-width:430px){
  .hero h1{font-size:31px}.form-row{grid-template-columns:1fr}
@@ -761,7 +762,17 @@ input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0
  .service-grid{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr}
  .footer-grid{grid-template-columns:1fr}
  .stats-box{padding:12px}
+ .pet-spec-col.left-col .col-header-pill {
+        align-self: center;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+.pet-spec-col.right-col .col-header-pill {
+    align-self: center;
+    font-size: 15px;
+    margin-bottom: 8px;
 }
+  }
 
 
 /* Form submission feedback */
@@ -1444,11 +1455,11 @@ input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0
 @media(max-width:700px){
   .floating-pet-container.left {
     left: 14px;
-    bottom: 74px;
+    bottom: 400px;
   }
   .floating-pet-container.right {
     right: 14px;
-    bottom: 74px;
+    bottom: 200px;
   }
   .floating-pet-bubble {
     width: 44px;
@@ -1918,7 +1929,7 @@ Sharing some happy 😊 moments that became possible because of Mr Bijoy -Pet Mo
  <div class="container copy">© 2026 Pet Movers. All rights reserved.</div>
 </footer>
 
-<div class="mobile-bar"><a href="tel:+919667921734" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call Now</a><a href="https://wa.me/919667921734" class="btn btn-red" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
+<div class="mobile-bar"><a href="tel:+919667921734" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call Now</a><a href="https://wa.me/919667921734" class="btn btn-green" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
 
 <!-- Floating Pet & WhatsApp Widgets (Left: Dog | Right: Cat & WhatsApp) -->
 <div class="floating-pet-container left" aria-label="Relocate Dog">
