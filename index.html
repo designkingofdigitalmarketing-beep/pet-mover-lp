@@ -146,19 +146,6 @@ a{text-decoration:none;color:inherit}
   color:#fff;
 }
 
-.menu{
-  display:none;
-  background:none;
-  border:0;
-  font-size:25px;
-  cursor:pointer;
-  transition:transform .3s ease, color .3s ease;
-}
-.menu:hover{
-  color:var(--red);
-  transform:rotate(90deg) scale(1.1);
-}
-
 .hero{background:linear-gradient(110deg,#fff 0%,#fff 49%,#f3f9fd 100%);overflow:hidden}
 .hero-grid{min-height:585px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:25px;padding:48px 0 30px}
 .badge{display:inline-flex;padding:7px 13px;border-radius:999px;background:#ffe7e8;color:var(--red);font-size:11px;font-weight:800;letter-spacing:.3px}
@@ -622,7 +609,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0
 
 .mobile-bar{display:none}
 @media(max-width:1000px){
- .navlinks{display:none}.menu{display:block}.phone{display:none}
+ .navlinks{display:none}
  .hero-grid{grid-template-columns:1fr;padding-top:35px}.hero h1{font-size:43px}
  .hero-visual{min-height:500px}.quote-card{right:4%;bottom:0}
   .testimonial-card {
@@ -1492,7 +1479,6 @@ input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0
   <div class="nav-actions">
    <a class="phone" href="tel:+919667921734"><i class="fa-solid fa-phone"></i>+91 96679 21734</a>
    <a class="btn btn-red" href="#quote">Get Free Quote <i class="fa-solid fa-arrow-right"></i></a>
-   <button class="menu" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
   </div>
  </div>
 </header>
@@ -2058,12 +2044,6 @@ document.querySelectorAll(".pet-lead-form").forEach(form => {
       setFormStatus(form, "Unable to submit right now. Please try again or call us.", "error");
     }
   });
-});
-document.querySelector('.menu').addEventListener('click',()=>{
- const nav=document.querySelector('.navlinks');
- nav.style.display=nav.style.display==='flex'?'none':'flex';
- nav.style.position='absolute';nav.style.top='62px';nav.style.left='0';nav.style.right='0';
- nav.style.background='#fff';nav.style.padding='16px 4%';nav.style.flexDirection='column';nav.style.boxShadow='0 12px 25px rgba(0,0,0,.08)';
 });
 // large testimonail section
 /* =========================================
